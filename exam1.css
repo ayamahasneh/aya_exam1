@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;    
+  }
+header {
+    text-align: center;
+    padding: 20px;
+    color: #800080;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+  }
+  .container {
+    margin: 10px 10px 10px 10px;
+   /*will wrap to the next line if there is not enough space on the current line. */
+    font-size: 14px;
+  }
+.section{
+    position: relative;
+    height: 120px;
+    float: right;
+    border: 2px solid black;
+    /* margin: 10px ;  */
+    padding: 30px 0px 0px 0px;
+    background: lightgray;
+    transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+.section:hover {
+    background-color: maroon;}
+    .title{
+        position: absolute;
+        width: 33.3%;
+        text-align: center;
+        top: 0;
+        right: 0;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    
+    }
+    .price{
+        position: absolute;
+        bottom:  0;
+        left: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        font-weight: bold;
+        background-color: #dc4adc;
+    
+    }
+    .chicken>.title{
+        background: lightblue;
+    
+    }
+    .beef>.title{
+        background: lightcoral;
+    }
+    .sushi>.title{
+        background: lightgreen;
+    }
+
+    
+
+    .section{overflow: auto}    
+
+
+footer{
+    bottom: 0;
+    left: o;
+    position: fixed;
+    text-align: center;
+    background-color: #800080;
+    width: 100%;
+}
+
+
+
+@media (min-width: 992px)
+{
+.section{
+    width: 33.3%;
+
+}
+.container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  }
+
+@media (min-width: 850px) and (max-width: 1199px){
+
+.chicken,.beef{
+    /* margin: 5px; */
+    padding-right: 7px;
+
+    float: right;
+    width: 48%;}
+
+.sushi{
+    margin: 5px;
+    /* margin-right: 5px; */
+    float: right;
+    width: 97.5%;
+}
+}
+
+
+@media  (max-width: 859px){
+   .section{
+       display: inline;
+        margin: 5px;
+       width: 98%;
+   }
+  }
+  footer{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    background-color: #800080;
+    width: 100%;
+}
+
+
